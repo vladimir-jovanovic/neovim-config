@@ -5,7 +5,9 @@ local icons = require 'icons'
 
 lspsaga.setup{
     server_filetype_map = {},
-    code_action_icon = icons.ui.Lightbulb
+    ui = {
+        code_action = icons.ui.Lightbulb
+    }
 }
 
 local keymap = vim.keymap.set
