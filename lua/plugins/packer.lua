@@ -39,9 +39,11 @@ return packer.startup(function(use)
 
     use 'nvim-tree/nvim-tree.lua'
 
+    use { 'nvim-treesitter/nvim-treesitter' }
+
     -- fuzzy finding w/ telescope
-	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
-	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
+    use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+    use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
     -- lsp helpers
     use 'williamboman/mason.nvim'
@@ -53,7 +55,7 @@ return packer.startup(function(use)
     -- autocompletion
     use 'L3MON4D3/LuaSnip'
     use("saadparwaiz1/cmp_luasnip")
-	use("rafamadriz/friendly-snippets")
+    use("rafamadriz/friendly-snippets")
     use 'onsails/lspkind-nvim'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-nvim-lua'
