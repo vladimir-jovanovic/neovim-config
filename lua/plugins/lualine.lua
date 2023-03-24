@@ -9,14 +9,15 @@ lualine.setup({
         theme = 'vscode',
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
-        disabled_filetypes = { 'packer', 'NVimTree' }
+        disabled_filetypes = { 'packer', 'NVimTree' },
+        globalstatus = true
     },
     sections = {
         lualine_a = { 'mode' },
-        lualine_b = { 'branch' },
+        lualine_b = { 'branch', 'diff' },
         lualine_c = { {
             'filename',
-            file_status = true, --
+            file_status = true,
             path = 0
         } },
         lualine_x = {
@@ -39,12 +40,8 @@ lualine.setup({
     inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = { {
-            'filename',
-            file_status = true,
-            path = 1
-        } },
-        lualine_x = { 'location' },
+        lualine_c = {},
+        lualine_x = {},
         lualine_y = {},
         lualine_z = {}
     },

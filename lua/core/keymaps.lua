@@ -11,7 +11,7 @@ keymap.set('n', '<C-W>;', '<C-W><C-L>')
 keymap.set('n', '<Leader>b', ':ls<CR>:b<Space>')
 keymap.set('n', '<Leader><Tab>', ':bn<CR>')
 keymap.set('n', '<Leader><S-Tab>', ':bp<CR>')
-keymap.set('n', '<Leader>q', ':bp<CR>:bd #<CR>')
+keymap.set('n', '<Leader>qq', ':bp<CR> :bd #<CR>')
 keymap.set('n', '<Leader>w', ':w<CR>')
 
 keymap.set('', '<F10>', ':terminal<CR>')

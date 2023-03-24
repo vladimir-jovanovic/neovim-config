@@ -24,5 +24,10 @@ for k, p in pairs(disabled_built_ins) do
   vim.g["loaded" .. p] = 1
 end
 
-require('plugins')
-require('core')
+if vim.g.vscode then
+    require("core.keymaps")
+else
+    require('plugins')
+    require('core')
+end
+
