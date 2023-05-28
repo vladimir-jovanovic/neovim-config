@@ -15,7 +15,7 @@ vscode.setup({
 
     -- Override colors (see ./lua/vscode/colors.lua)
     color_overrides = {
-        vscLineNumber = '#FFFFFF',
+        vscLineNumber = '#000000',
     },
 
     -- Override highlight groups (see ./lua/vscode/theme.lua)
@@ -25,3 +25,5 @@ vscode.setup({
         Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
     }
 })
+
+vscode.load()
