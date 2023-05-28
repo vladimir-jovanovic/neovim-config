@@ -32,7 +32,7 @@ end
 
 vim.lsp.set_log_level(vim.log.levels.OFF)
 
-lspconfig.sumneko_lua.setup {
+lspconfig.lua_ls.setup {
     settings = {
         Lua = {
             diagnostics = {
