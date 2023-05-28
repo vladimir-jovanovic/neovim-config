@@ -12,7 +12,7 @@ vscode.setup({
     disable_nvimtree_bg = true,
     -- Override colors (see ./lua/vscode/colors.lua)
     color_overrides = {
-        --vscLineNumber = '#FFFFFF',
+        vscLineNumber = '#000000',
     },
     -- Override highlight groups (see ./lua/vscode/theme.lua)
     group_overrides = {
@@ -21,3 +21,5 @@ vscode.setup({
         Cursor = { fg = vscodeColors.vscDarkBlue, bg = vscodeColors.vscLightGreen, bold = true },
     }
 })
+
+vscode.load()
